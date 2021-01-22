@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/imageList">
+
+    <fragment
+        android:id="@+id/imageList"
+        android:name="eg.com.invive.kotlin_first.Views.ImageList"
+        android:label="fragment_image_list"
+        tools:layout="@layout/fragment_image_list" >
+    </fragment>
+    <fragment
+        android:id="@+id/imageShow"
+        android:name="eg.com.invive.kotlin_first.Views.ImageShow"
+        android:label="fragment_image_show"
+        tools:layout="@layout/fragment_image_show" /><action android:id="@+id/action_global_imageShow" app:destination="@id/imageShow"/>
+</navigation>
